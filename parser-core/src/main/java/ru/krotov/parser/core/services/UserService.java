@@ -1,10 +1,8 @@
-package com.example.demo.services;
+package ru.krotov.parser.core.services;
 
-import com.example.demo.controllers.ControllerConstants;
-import com.example.demo.models.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.web.bind.annotation.*;
+import ru.akrotov.parser.common.models.User;
 
 import java.util.List;
 

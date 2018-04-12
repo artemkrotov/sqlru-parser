@@ -1,6 +1,8 @@
-package com.example.demo.models;
+package ru.akrotov.parser.common.models;
 
+import lombok.Data;
+
+@Data
 public class Message {
-
-    String message;
+    private String message;
 }

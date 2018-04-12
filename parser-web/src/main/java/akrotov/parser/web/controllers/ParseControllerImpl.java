@@ -1,7 +1,7 @@
-package com.example.demo.controllers;
+package akrotov.parser.web.controllers;
 
-import com.example.demo.models.Message;
 import org.springframework.data.domain.PageRequest;
+import ru.akrotov.parser.common.models.Message;
 
 public class ParseControllerImpl implements ParseController {
 

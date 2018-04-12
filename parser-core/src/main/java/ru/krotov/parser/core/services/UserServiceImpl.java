@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package ru.krotov.parser.core.services;
 
 public class UserServiceImpl {
 }

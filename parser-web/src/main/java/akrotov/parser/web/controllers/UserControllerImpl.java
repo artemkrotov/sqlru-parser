@@ -1,8 +1,9 @@
-package com.example.demo.controllers;
+package akrotov.parser.web.controllers;
 
-import com.example.demo.models.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import ru.akrotov.parser.common.models.User;
+
 import java.util.List;
 
 public class UserControllerImpl implements UserController {

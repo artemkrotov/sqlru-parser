@@ -1,9 +1,7 @@
-package com.example.demo.models.generators;
+package ru.akrotov.parser.common.models.generators;
 
-import com.example.demo.models.Identifiable;
 import org.hibernate.HibernateException;
 import org.hibernate.dialect.Dialect;
-import org.hibernate.engine.spi.SessionImplementor;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.id.AbstractPostInsertGenerator;
 import org.hibernate.id.IdentifierGeneratorHelper;
@@ -12,6 +10,7 @@ import org.hibernate.id.SequenceIdentityGenerator;
 import org.hibernate.id.insert.AbstractReturningDelegate;
 import org.hibernate.id.insert.IdentifierGeneratingInsert;
 import org.hibernate.id.insert.InsertGeneratedIdentifierDelegate;
+import ru.akrotov.parser.common.models.Identifiable;
 
 import java.io.Serializable;
 import java.sql.PreparedStatement;

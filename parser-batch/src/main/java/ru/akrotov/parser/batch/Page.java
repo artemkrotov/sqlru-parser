@@ -1,11 +1,10 @@
-package com.example.demo.services;
+package ru.akrotov.parser.batch;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -24,7 +23,7 @@ public class Page {
             e.printStackTrace();
         }
 
-        return Strings.EMPTY;
+        return "";
     }
 
 }

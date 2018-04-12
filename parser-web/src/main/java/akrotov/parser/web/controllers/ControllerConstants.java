@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package akrotov.parser.web.controllers;
 
 public class ControllerConstants {
 

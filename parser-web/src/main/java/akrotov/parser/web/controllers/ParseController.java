@@ -1,9 +1,9 @@
-package com.example.demo.controllers;
+package akrotov.parser.web.controllers;
 
-import com.example.demo.models.Message;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import ru.akrotov.parser.common.models.Message;
 
 public interface ParseController {
 

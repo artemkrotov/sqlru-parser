@@ -1,7 +1,7 @@
-package com.example.demo.services;
+package ru.krotov.parser.core.services;
 
-import com.example.demo.models.Message;
 import org.springframework.data.domain.PageRequest;
+import ru.akrotov.parser.common.models.Message;
 
 public interface ParseService {
 

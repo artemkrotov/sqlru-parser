@@ -1,10 +1,11 @@
-package com.example.demo.models;
+package ru.akrotov.parser.common.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
+import ru.akrotov.parser.common.models.Identifiable;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -17,7 +18,7 @@ import java.io.Serializable;
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Table(name = "User")
-public class User implements Serializable, Identifiable{
+public class User implements Serializable, Identifiable {
 
     /**
      * Идентификатор
