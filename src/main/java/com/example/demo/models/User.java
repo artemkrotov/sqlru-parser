@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -16,13 +17,16 @@ import java.io.Serializable;
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Table(name = "User")
-public class User implements Serializable{
+public class User implements Serializable, Identifiable{
 
     /**
      * Идентификатор
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GenericGenerator(
+        name = "triggerAssigned",
+        strategy = "com.example.demo.models.generators.TriggerAssignedIdentityGenerator"
+    )
     @Column(name = "ID")
     private Long id;
 
